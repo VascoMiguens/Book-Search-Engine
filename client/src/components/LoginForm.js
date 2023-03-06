@@ -9,8 +9,9 @@ import Auth from "../utils/auth";
 const LoginForm = () => {
   // state variable that holds the user's email and password input values
   const [userFormData, setUserFormData] = useState({ email: "", password: "" });
-  //  usemutation hook contains the LOGIN_USER mutation, the data properties holds the response data return from the server
+  // usemutation hook contains the LOGIN_USER mutation, the data properties holds the response data return from the server
   const [login, { error, data }] = useMutation(LOGIN_USER);
+  // set state for form validation
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
 
