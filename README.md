@@ -15,6 +15,7 @@ The app was built with:
  * Node.js
  * Express.js
  * MongoDB
+ * GraphQL
 
 ## Installation 
  
@@ -22,8 +23,18 @@ The app was built with:
 * Run the application locally: npm run develop
 
 ## Usage 
- The following video demonstrates the application being used: 
- ![til](
+ 
+ The following image illustrate the application: 
+ 
+ ![image](https://user-images.githubusercontent.com/43990609/223410895-b3c3bb80-b841-4b3f-8b41-b922c1234bb6.png)
+ ![image](https://github.com/VascoMiguens/Book-Search-Engine/blob/master/assets/login.png?raw=true)
+ ![image](https://github.com/VascoMiguens/Book-Search-Engine/blob/master/assets/search.png?raw=true)
+ ![image](https://github.com/VascoMiguens/Book-Search-Engine/blob/master/assets/saved.png?raw=true)
+ 
+ To visit the deployed website please click the link:
+  
+  - https://book-serch-engine-graphqlapi.herokuapp.com/
+ 
 
 ## License 
         This project is licensed under the MIT License license.
