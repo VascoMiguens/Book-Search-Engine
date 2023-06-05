@@ -16,7 +16,7 @@ const SavedBooks = () => {
   // get the current user's data
   const { loading, data } = useQuery(GET_ME);
   // define a mutation for removing a book from the user's savedbook list
-  const [removeBook, { error }] = useMutation(REMOVE_BOOK);
+  const [removeBook] = useMutation(REMOVE_BOOK);
 
   // if the data query exists, extract the user's data or set an empty object
   const userData = data?.me || {};
@@ -31,7 +31,7 @@ const SavedBooks = () => {
 
     try {
       // destructure the "data" property returned by the removeBook method and pass "bookId" as an argument to remove the book from the database
-      const { data } = await removeBook({
+      await removeBook({
         variables: { bookId },
       });
 
