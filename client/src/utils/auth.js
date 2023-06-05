@@ -44,9 +44,10 @@ class AuthService {
     // this will reload the page and reset the state of the application
     window.location.assign("/");
   }
-
-  // Assign the class instance to a variable
-  static instance = new AuthService();
 }
 
-export default new AuthService.instance();
+// Create an instance of the AuthService class
+const authService = new AuthService();
+
+// Export the instance as the default export
+export default authService;
